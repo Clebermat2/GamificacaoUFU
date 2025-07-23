@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruzadinha - Gestão Escolar PDDE</title>
+    <link rel="stylesheet" href="cruzadinha.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>CRUZA<span class="accent">DINHA</span></h2>
+            </div>
+            <div class="accessibility-controls">
+                <button id="increase-font" class="control-btn" aria-label="Aumentar fonte">A+</button>
+                <button id="decrease-font" class="control-btn" aria-label="Diminuir fonte">A-</button>
+                <button id="increase-grid" class="control-btn" aria-label="Aumentar quadrados">□+</button>
+                <button id="decrease-grid" class="control-btn" aria-label="Diminuir quadrados">□-</button>
+                <button id="toggle-contrast" class="control-btn" aria-label="Alternar contraste">◐</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <header class="header">
+                <h1 class="title">Cruzadinha para Gestores Escolares</h1>
+                <p class="subtitle">Administrando o Futuro da Educação</p>
+                <p class="description">Utilize as dicas baseadas nos materiais fornecidos para preencher a cruzadinha e fortalecer sua compreensão sobre a gestão eficaz dos recursos do PDDE.</p>
+            </header>
+
+            <div class="game-container">
+                <div class="crossword-container">
+                    <div class="crossword-grid" id="crossword-grid" role="grid" aria-label="Grade da cruzadinha">
+                        <!-- Grid será gerada pelo JavaScript -->
+                    </div>
+                </div>
+
+                <div class="clues-container">
+                    <div class="clues-section">
+                        <h2>Palavras Horizontais</h2>
+                        <div class="clue-list">
+                            <div class="clue-item" data-word="1">
+                                <span class="clue-number">1.</span>
+                                <span class="clue-text">Uma das quatro funções básicas da administração (PODC) que é essencial para usar bem os recursos do PDDE e que não funciona sem relatórios de contabilidade.</span>
+                                <span class="clue-answer" aria-label="12 letras">PLANEJAMENTO</span>
+                            </div>
+                            <div class="clue-item" data-word="2">
+                                <span class="clue-number">2.</span>
+                                <span class="clue-text">Um dever e compromisso na gestão pública que faz com que a comunidade escolar e a sociedade confiem no uso correto do dinheiro público.</span>
+                                <span class="clue-answer" aria-label="12 letras">TRANSPARÊNCIA</span>
+                            </div>
+                            <div class="clue-item" data-word="3">
+                                <span class="clue-number">3.</span>
+                                <span class="clue-text">Um dos objetivos principais que a boa gestão dos recursos do PDDE busca alcançar para melhorar o ensino e o ambiente escolar.</span>
+                                <span class="clue-answer" aria-label="9 letras">QUALIDADE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clues-section">
+                        <h2>Palavras Verticais</h2>
+                        <div class="clue-list">
+                            <div class="clue-item" data-word="4">
+                                <span class="clue-number">4.</span>
+                                <span class="clue-text">O que o PDDE fornece às escolas públicas para melhorar a estrutura, comprar materiais e desenvolver projetos. Isso permite que as escolas atendam suas necessidades rapidamente e de forma eficiente.</span>
+                                <span class="clue-answer" aria-label="8 letras">RECURSOS</span>
+                            </div>
+                            <div class="clue-item" data-word="5">
+                                <span class="clue-number">5.</span>
+                                <span class="clue-text">O "Rol de ___________" é um documento obrigatório para gastar e prestar contas do PDDE. Ferramentas como a Matriz de Eisenhower ajudam o gestor a decidir quais tarefas devem ser feitas primeiro, como na organização do uso desses fundos.</span>
+                                <span class="clue-answer" aria-label="10 letras">PRIORIDADE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-status">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <p class="status-text" id="status-text">Complete a cruzadinha preenchendo todas as palavras</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="cruzadinha.js"></script>
+</body>
+</html>
