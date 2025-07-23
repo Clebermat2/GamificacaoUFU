@@ -6,40 +6,40 @@ class CrosswordGame {
         this.currentDirection = 'horizontal';
         this.completedWords = new Set();
         
-        // Definição das palavras e suas posições (CORRIGIDO)
+        // Definição das palavras e suas posições (NOVA CORREÇÃO)
         this.words = {
             1: { // PLANEJAMENTO (horizontal)
                 word: 'PLANEJAMENTO',
-                startRow: 9, // Posição corrigida
-                startCol: 3, // Posição corrigida
+                startRow: 12, // Posição corrigida
+                startCol: 0,  // Posição corrigida
                 direction: 'horizontal',
                 clue: 'Uma das quatro funções básicas da administração (PODC) que é essencial para usar bem os recursos do PDDE e que não funciona sem relatórios de contabilidade.'
             },
             2: { // TRANSPARÊNCIA (horizontal)
                 word: 'TRANSPARENCIA',
-                startRow: 2, // Posição corrigida
-                startCol: 0, // Posição corrigida
+                startRow: 5,  // Posição corrigida
+                startCol: 1,  // Posição corrigida
                 direction: 'horizontal',
                 clue: 'Um dever e compromisso na gestão pública que faz com que a comunidade escolar e a sociedade confiem no uso correto do dinheiro público.'
             },
             3: { // QUALIDADE (horizontal)
                 word: 'QUALIDADE',
-                startRow: 10, // Posição corrigida
-                startCol: 0, // Posição corrigida
+                startRow: 11, // Posição corrigida
+                startCol: 1,  // Posição corrigida
                 direction: 'horizontal',
                 clue: 'Um dos objetivos principais que a boa gestão dos recursos do PDDE busca alcançar para melhorar o ensino e o ambiente escolar.'
             },
             4: { // RECURSOS (vertical)
                 word: 'RECURSOS',
-                startRow: 2, // Posição corrigida
-                startCol: 1, // Posição corrigida
+                startRow: 3,  // Posição corrigida
+                startCol: 11, // Posição corrigida
                 direction: 'vertical',
                 clue: 'O que o PDDE fornece às escolas públicas para melhorar a estrutura, comprar materiais e desenvolver projetos. Isso permite que as escolas atendam suas necessidades rapidamente e de forma eficiente.'
             },
             5: { // PRIORIDADE (vertical)
                 word: 'PRIORIDADE',
-                startRow: 2, // Posição corrigida
-                startCol: 5, // Posição corrigida
+                startRow: 5,  // Posição corrigida
+                startCol: 6,  // Posição corrigida
                 direction: 'vertical',
                 clue: 'O "Rol de ___________" é um documento obrigatório para gastar e prestar contas do PDDE. Ferramentas como a Matriz de Eisenhower ajudam o gestor a decidir quais tarefas devem ser feitas primeiro, como na organização do uso desses fundos.'
             }
